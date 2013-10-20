@@ -1,0 +1,4 @@
+LocalStringGenerator
+====================
+
+Local String Generator
