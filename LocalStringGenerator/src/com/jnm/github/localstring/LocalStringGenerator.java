@@ -18,8 +18,8 @@ public class LocalStringGenerator {
 	private static final String 	Param_Java_ClassName 		= "Strs";
 	
 	private static final String 	Param_ObjectiveC_Path 		= "C:/Users/user/Desktop/iOS/iOS_EverySing/Localizable";
-
-
+	
+	
 	private static class CategoryMap extends HashMap<String, NameMap> {
 	}
 	private static class NameMap extends HashMap<String, LanguageISOMap> {
@@ -39,13 +39,13 @@ public class LocalStringGenerator {
 			}
 			printToJava(Param_Java_Path, Param_Java_Package, Param_Java_ClassName);
 			printToObjectiveC(Param_ObjectiveC_Path);
-
+			
 		} catch(Throwable e) {
 			e.printStackTrace();
 		}
 	}
-
-
+	
+	
 	private static void arrangeLocalStrings(Worksheet pWorksheet) {
 		// Header Row
 		for(int i=LocalStringStartColumn;i<pWorksheet.getMaxColCount();i++) {
@@ -99,7 +99,7 @@ public class LocalStringGenerator {
 		pr.prfln("sCurLanguageISO = pCurLanguageISO;");
 		pr.prfln("}");
 		pr.println();
-				
+		
 		pr.prfln("public static String u(String pString) {  ");
 		pr.prfln("return pString; ");
 		pr.prfln("}");
@@ -162,7 +162,7 @@ public class LocalStringGenerator {
 		pr.prfln("}");
 		pr.close();
 	}
-
+	
 	private static void printToObjectiveC(String pParam_Path) throws FileNotFoundException, UnsupportedEncodingException {
 		for(String lLanguageISOCode : sLanguageColumn.values()) {
 			PrintStream_Java pr = new PrintStream_Java(pParam_Path+"/"+"Localizable_"+lLanguageISOCode+".strings");
