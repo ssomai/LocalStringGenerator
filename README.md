@@ -3,6 +3,8 @@ LocalStringGenerator
 
 Local String Generator with Google SpreadSheet.
 
+Main Class : com.jnm.github.localstring.LocalStringGenerator
+
 Support
 <ol>
 	<li>
