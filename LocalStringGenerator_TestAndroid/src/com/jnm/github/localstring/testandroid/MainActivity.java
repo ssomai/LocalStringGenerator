@@ -16,8 +16,6 @@ public class MainActivity extends Activity {
 		
 		TextView tv = (TextView) findViewById(R.id.localstring);
 		tv.setText(Strs.Basic.Purchase.get());
-		
-		ddd
 	}
 	
 	@Override
