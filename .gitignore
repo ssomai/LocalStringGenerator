@@ -3,7 +3,7 @@
 #################
 
 *.pydevproject
-.project
+# .project
 .metadata
 bin/
 tmp/
@@ -12,7 +12,7 @@ tmp/
 *.swp
 *~.nib
 local.properties
-.classpath
+# .classpath
 .settings/
 .loadpath
 
@@ -27,6 +27,11 @@ local.properties
 
 # PDT-specific
 .buildpath
+
+#################
+## Android
+#################
+gen/
 
 
 #################
